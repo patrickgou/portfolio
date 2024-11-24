@@ -77,21 +77,33 @@
 <!-- Main Content -->
 <main>
   <!-- Apresentação -->
-  <section class="flex flex-col lg:mt-16 ml-3 lg:ml-24 space-y-4">
-    <h4 class="text-sky-700 text-2xl lg:text-3xl mb-2 text-center lg:text-left">Hello world 👋🏾</h4>
-    <div class="text-white text-4xl lg:text-5xl font-bold text-center lg:text-left" id="typed-text"></div>
-    <div class="text-gray-400 text-xl lg:text-2xl mt-2 mb-6 text-center lg:text-left" id="typed-text2"></div>
+  <section class="lg:flex lg:justify-start lg:items-start lg:mt-16 ml-3 lg:ml-16 space-y-4 lg:space-y-0">
+    <!-- Coluna de texto e botões -->
+    <div class="flex flex-col space-y-4 lg:w-2/5">
+      <h4 class="text-sky-700 text-2xl lg:text-3xl mb-2 text-center lg:text-left">Hello world 👋🏾</h4>
+      <div class="text-white text-3xl lg:text-4xl font-bold text-center lg:text-left" id="typed-text"></div>
+      <div class="text-gray-400 text-lg lg:text-xl mt-2 mb-6 text-center lg:text-left" id="typed-text2"></div>
   
-    <button id="faar comigo" onclick="alert('Você irá para o whatsapp!')" class="bg-sky-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-sky-400 transition-colors duration-300 hover:scale-90 w-max mx-auto lg:mx-0">
-      <a href="https://wa.me/21972606068">Fale Comigo</a>
-    </button>
-
-    <button onclick="alert('Download do curriculo com sucesso!')" class="bg-sky-600 text-white px-3 py-3 rounded-lg text-lg font-semibold hover:bg-sky-400 transition-colors duration-300 hover:scale-90 w-max mx-auto lg:mx-0">
-      <a href="./curriculo patrick (1).pdf.pdf" download="Curriculo_Patrick">
-        Baixar Currículo
-    </a>
-    </button>
+      <button id="faar comigo" onclick="alert('Você irá para o whatsapp!')" class="bg-sky-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-sky-400 transition-colors duration-300 hover:scale-90 w-max mx-auto lg:mx-0">
+        <a href="https://wa.me/21972606068">Fale Comigo</a>
+      </button>
+  
+      <button onclick="alert('Download do curriculo com sucesso!')" class="bg-sky-600 text-white px-3 py-3 rounded-lg text-lg font-semibold hover:bg-sky-400 transition-colors duration-300 hover:scale-90 w-max mx-auto lg:mx-0">
+        <a href="./curriculo patrick (1).pdf.pdf" download="Curriculo_Patrick">
+          Baixar Currículo
+        </a>
+      </button>
+    </div>
+  
+    <!-- Coluna do vídeo -->
+    <div class="lg:w-1/2 lg:ml-6 mt-4 lg:mt-0">
+      <video autoplay loop muted class="w-full h-auto rounded-lg shadow-lg">
+        <source src="./src/images/PG.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
   </section>
+  
 
   <!-- Sobre -->
   <section id="sobre" class="container mx-auto my-12 p-6 flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-8">
